@@ -17,42 +17,35 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="card">
-      <!-- product picture container -->
-      <div class="product-img">
-        <picture>
-          <!-- picture for smartphones -->
-          <source
-            srcset="/images/image-product-mobile.jpg"
-            media="(max-width: 768px)"
-          />
-          <!-- picture for desktops -->
-          <source srcset="/images/image-product-desktop.jpg" />
-          <!-- picture for browsers that do not support <picture> element -->
-          <img src="/images/image-product-desktop.jpg" alt="Product picture" />
-        </picture>
-      </div>
-      <!-- product information container -->
-      <div class="product-info">
-        <p class="category">Preview</p>
-        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
-        <p class="product-description">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <p class="product-price">$149.99</p>
-        <p class="product-old-price">$169.99</p>
-        <button class="button">
-          <img src="/images/icon-cart.svg" class="cart-icon" />Add to Cart
-        </button>
-      </div>
-    </div>
+    <main>
+      <div class="card">
+        <div class="product-img">
+          <img src="/images/image-product-mobile.jpg" alt="Perfume" />
+        </div>
 
-    <div class="attribution">
+        <div class="product-desc">
+          <span class="category">Perfume</span>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="prices">
+            <span class="sale-price">$149.99</span>
+            <span class="list-price">$169.99</span>
+          </div>
+          <button class="button">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">yoyo-ka</a>.
-    </div>
+    </footer>
   </body>
 </html>
